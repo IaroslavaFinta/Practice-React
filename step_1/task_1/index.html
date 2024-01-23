@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake Name Generator</title>
+    <!-- Task 1: Replace this comment with the script tag to include Faker via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      /* Replace the content of the above div with a name generated
+         with faker.
+      */
+      const root = document.getElementById("root");
+      root.textContent = faker.name.firstName();
+    </script>
+  </body>
+</html>
